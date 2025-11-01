@@ -1,1 +1,188 @@
-CSS
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نطاقات الشاطبية</title>
+
+ <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background-color: white;
+
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+        justify-content: center; 
+
+    }
+
+    #hero {
+      justify-content: space-between;
+    }
+    #services {
+      scroll-margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+<section id="hero" class="bg-white text-center">
+  <header class="d-flex justify-content-end p-3">
+    <nav>
+      <a class="text-decoration-none text-dark fs-5 mx-3" href="#">الدرة</a>
+      <a class="text-decoration-none text-dark fs-5" href="#">الطيبة</a>
+    </nav>
+  </header>
+
+  <div class="container d-flex flex-column justify-content-center align-items-center flex-grow-1" style="gap: 1rem;">
+    <img src="images/logo.png" class="img-fluid mb-2" alt="Logo" style="max-width: 120px;">
+    <p class="lead mb-0" style="max-width: 600px;">
+      يهدف هذا الموقع إلى تسهيل فهم متن الشاطبية بطريقة عملية وتفاعلية، على نهج الإمام الشاطبي رحمه الله الذي نظَم كل معلومة في قالب شعري بعد ابتكاره للرموز، لذلك سنتدارس الرموز ثم الأبيات كنطاقات شعرية.
+    </p>
+  </div>
+
+  <div class="text-center pb-4">
+    <a href="#services" class="text-decoration-none text-dark" style="display: inline-block;">
+      <div class="rounded-circle border border-2 p-3 d-flex justify-content-center align-items-center" style="width: 50px; height: 50px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="services" class="vh-100 bg-light d-flex flex-column justify-content-center">
+  <div class="container text-center">
+    <h2 class="mb-5 display-5 fw-bold">أقسام المدارسة</h2>
+
+    <div id="studyCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="card p-4 shadow border-0 mx-auto" style="max-width: 700px;">
+            <h3 class="fw-bold mb-3">الرموز</h3>
+            <p class="text-muted mb-4">
+              يُعنى القسم بحفظ رموز القرّاء ورواتهم وفهم دلالتها، من خلال بطاقات للحفظ التدريجي واختبارات تراكمية، مع مراجعة تفاعلية لأبيات المتن تُظهر الرموز لاختيار مدلولها والتحقق من الإجابات.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                اختر طريقة المدارسة
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">حفظ جديد</a></li>
+                <li><a class="dropdown-item" href="#">مراجعة</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card p-4 shadow border-0 mx-auto" style="max-width: 700px;">
+            <h3 class="fw-bold mb-3">الأبيات</h3>
+            <p class="text-muted mb-4">
+              يُعنى بحفظ أبيات الشاطبية وفهمها على مراحل، من خلال نطاقات معنوية واختبارات تراكمية ومراجعة تفاعلية تربط المعنى بالبيت.
+            </p>
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                اختر طريقة المدارسة
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">حفظ جديد</a></li>
+                <li><a class="dropdown-item" href="#">مراجعة</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="card p-4 shadow border-0 mx-auto" style="max-width: 700px;">
+            <h3 class="fw-bold mb-3">المصحف</h3>
+            <p class="text-muted mb-4">
+              يتيح التفاعل مع آيات المصحف باختيار الحكم والرمز المناسب لكل كلمة، ثم التحقق من الإجابات.
+            </p>
+            <div class="mt-3">
+      <a href="#" class="btn btn-outline-secondary">
+        انتقل إلى المصحف الشريف
+      </a>
+    </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#studyCarousel" data-bs-slide="prev" style="opacity: 1;">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+        <span class="visually-hidden">السابق</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#studyCarousel" data-bs-slide="next" style="opacity: 1;">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+        <span class="visually-hidden">التالي</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5 display-4">نسعد بملاحظتك واقتراحك</h2>
+        
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                
+                <form action="#" method="POST">
+                    
+                    <div class="mb-3">
+                        <label for="name" class="form-label">الاسم الكامل</label>
+                        <input type="text" class="form-control" id="name" placeholder="أدخل اسمك" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">البريد الإلكتروني</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">عنوان الرسالة</label>
+                        <input type="text" class="form-control" id="subject" placeholder="موضوع رسالتك" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">نص الرسالة</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">إرسال الرسالة</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer class="bg-white text-dark py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-start">
+                <p class="mb-0 text-muted small">
+                    جميع الحقوق محفوظة &copy; 2025. موقع نطاقات الشاطبية.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+</body>
+</html>
